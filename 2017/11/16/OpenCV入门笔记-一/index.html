@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content=" 图像处理 ," />
 
 
 
@@ -79,19 +79,20 @@
 
 
 
-<meta name="description" content="OpenCV入门笔记  图像与原始字节的转换   从概念上讲,一个字节能表示0至255的整数。目前，对于多有的实时图像应用而言，虽然有其他的表示形式，但一个像素通常由每个通道的一个字节表示。    &amp;emsp;&amp;emsp;一个OpenCV图像是.array类型的二维或三维数组。8位的灰度图像是一个含有字">
+<meta name="description" content="图像与原始字节的转换   从概念上讲,一个字节能表示0至255的整数。目前，对于多有的实时图像应用而言，虽然有其他的表示形式，但一个像素通常由每个通道的一个字节表示。    &amp;emsp;&amp;emsp;一个OpenCV图像是.array类型的二维或三维数组。8位的灰度图像是一个含有字节值得二维数组；一个24">
+<meta name="keywords" content=" 图像处理 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="绅士">
-<meta property="og:url" content="http://zhangpin.site/2017/11/12/OpenCV入门/index.html">
+<meta property="og:title" content="OpenCV入门笔记(一)">
+<meta property="og:url" content="http://zhangpin.site/2017/11/16/OpenCV入门笔记-一/index.html">
 <meta property="og:site_name" content="绅士">
-<meta property="og:description" content="OpenCV入门笔记  图像与原始字节的转换   从概念上讲,一个字节能表示0至255的整数。目前，对于多有的实时图像应用而言，虽然有其他的表示形式，但一个像素通常由每个通道的一个字节表示。    &amp;emsp;&amp;emsp;一个OpenCV图像是.array类型的二维或三维数组。8位的灰度图像是一个含有字节值得二维数组；一个24位BGR图像是一个三位数组，它也包含了字节值。可使用表达式访问这些值，">
+<meta property="og:description" content="图像与原始字节的转换   从概念上讲,一个字节能表示0至255的整数。目前，对于多有的实时图像应用而言，虽然有其他的表示形式，但一个像素通常由每个通道的一个字节表示。    &amp;emsp;&amp;emsp;一个OpenCV图像是.array类型的二维或三维数组。8位的灰度图像是一个含有字节值得二维数组；一个24位BGR图像是一个三位数组，它也包含了字节值。可使用表达式访问这些值，如image[0][0]或">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://images2015.cnblogs.com/blog/1043575/201703/1043575-20170322113215424-1605208211.png">
 <meta property="og:image" content="http://images2015.cnblogs.com/blog/1043575/201703/1043575-20170322143255846-1713113109.png">
-<meta property="og:updated_time" content="2017-11-12T08:55:14.000Z">
+<meta property="og:updated_time" content="2017-11-17T15:05:23.327Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="绅士">
-<meta name="twitter:description" content="OpenCV入门笔记  图像与原始字节的转换   从概念上讲,一个字节能表示0至255的整数。目前，对于多有的实时图像应用而言，虽然有其他的表示形式，但一个像素通常由每个通道的一个字节表示。    &amp;emsp;&amp;emsp;一个OpenCV图像是.array类型的二维或三维数组。8位的灰度图像是一个含有字节值得二维数组；一个24位BGR图像是一个三位数组，它也包含了字节值。可使用表达式访问这些值，">
+<meta name="twitter:title" content="OpenCV入门笔记(一)">
+<meta name="twitter:description" content="图像与原始字节的转换   从概念上讲,一个字节能表示0至255的整数。目前，对于多有的实时图像应用而言，虽然有其他的表示形式，但一个像素通常由每个通道的一个字节表示。    &amp;emsp;&amp;emsp;一个OpenCV图像是.array类型的二维或三维数组。8位的灰度图像是一个含有字节值得二维数组；一个24位BGR图像是一个三位数组，它也包含了字节值。可使用表达式访问这些值，如image[0][0]或">
 <meta name="twitter:image" content="http://images2015.cnblogs.com/blog/1043575/201703/1043575-20170322113215424-1605208211.png">
 
 
@@ -122,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://zhangpin.site/2017/11/12/OpenCV入门/"/>
+  <link rel="canonical" href="http://zhangpin.site/2017/11/16/OpenCV入门笔记-一/"/>
 
 
 
 
 
-  <title> | 绅士</title>
+  <title>OpenCV入门笔记(一) | 绅士</title>
   
 
 
@@ -293,7 +294,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zhangpin.site/2017/11/12/OpenCV入门/">
+    <link itemprop="mainEntityOfPage" href="http://zhangpin.site/2017/11/16/OpenCV入门笔记-一/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jason">
@@ -310,7 +311,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">OpenCV入门笔记(一)</h1>
         
 
         <div class="post-meta">
@@ -322,8 +323,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-12T12:50:20+08:00">
-                2017-11-12
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-16T22:49:28+08:00">
+                2017-11-16
               </time>
             
 
@@ -333,6 +334,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习/" itemprop="url" rel="index">
+                    <span itemprop="name">学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -340,7 +363,7 @@
 
           
           
-             <span id="/2017/11/12/OpenCV入门/" class="leancloud_visitors" data-flag-title="">
+             <span id="/2017/11/16/OpenCV入门笔记-一/" class="leancloud_visitors" data-flag-title="OpenCV入门笔记(一)">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -371,9 +394,7 @@
       
 
       
-        <p align="center"> <font face="default" size="8" color="#C0FF3E"><u><b>OpenCV入门笔记</b></u></font></p>
-
-<h1 id="图像与原始字节的转换"><a href="#图像与原始字节的转换" class="headerlink" title="图像与原始字节的转换"></a><strong>图像与原始字节的转换</strong></h1><blockquote>
+        <h1 id="图像与原始字节的转换"><a href="#图像与原始字节的转换" class="headerlink" title="图像与原始字节的转换"></a><strong>图像与原始字节的转换</strong></h1><blockquote>
 <p>  从概念上讲,一个字节能表示0至255的整数。目前，对于多有的实时图像应用而言，虽然有其他的表示形式，但一个像素通常由每个通道的一个字节表示。</p>
 </blockquote>
 <p>  &emsp;&emsp;一个OpenCV图像是.array类型的二维或三维数组。8位的灰度图像是一个含有字节值得二维数组；一个24位BGR图像是一个三位数组，它也包含了字节值。可使用表达式访问这些值，如<font color="#ff0000">image[0][0]</font>或者<font color="#ff0000">image[0][0][0]</font>。第1个值代表像素的y坐标或者行，0表示最顶部，第2个值代表像素的x坐标或者列，0表示最左边，第3个值（如果有的话）代表颜色通道。如，对于一个左上角的白色像素的8位灰度图而，image[0][0]的值即为255，对于一个左上角的蓝色像素的24位BGR图而言，image[0][0]的值即为（0, 255, 0）。</p>
@@ -467,27 +488,17 @@ print(img.item(150, 120, 0))  # 打印修改后的蓝色值
 
     <footer class="post-footer">
       
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/11/17/hello-world/" rel="prev" title="Hello World">
-                Hello World <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
+        <div class="post-tags">
+          
+            <a href="/tags/图像处理/" rel="tag">#  图像处理 </a>
+          
         </div>
+      
+
+      
+      
+      
+
       
 
       
@@ -565,14 +576,32 @@ print(img.item(150, 120, 0))  # 打印修改后的蓝色值
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
             
 
           </nav>
